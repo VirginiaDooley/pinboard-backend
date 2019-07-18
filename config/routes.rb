@@ -1,5 +1,11 @@
 Rails.application.routes.draw do
-  resources :images
-  resources :boards
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
-end
+  
+  namespace do: api
+    namespace do :v1
+      resources :images
+      resources :boards
+    end
+  end
+
+
+fetch('http://localhost:3000/api/v1/boards')
