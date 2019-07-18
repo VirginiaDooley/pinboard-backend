@@ -1,11 +1,10 @@
 Rails.application.routes.draw do
-  
-  namespace do: api
-    namespace do :v1
+  namespace :api do
+    namespace :v1 do
       resources :images
       resources :boards
     end
   end
+end
 
-
-fetch('http://localhost:3000/api/v1/boards')
+# fetch('http://localhost:3000/api/v1/boards')
