@@ -16,6 +16,6 @@ To get start and/or collaborate:
 
  4) To run the app in the development mode: ```rails s```
 
- 5) Open http://localhost:3000 to view it in the browser.
+ 5) Open http://localhost:3001 (or another port different to your front end) to view it in the browser.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
