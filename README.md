@@ -1,24 +1,21 @@
-# README
+***Pinboard***
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Visualise your goals with an inspiration board. Search and choose images to "pin" and save them to a board with a title.
 
-Things you may want to cover:
+*LIVE SITE -> (coming soon)
 
-* Ruby version
+*VIDEO DEMO -> (coming soon)
 
-* System dependencies
+To get start and/or collaborate:
 
-* Configuration
+ 1) For the front end of this project, go to https://github.com/VirginiaDooley/pinboard and follow the getting started instructions.
 
-* Database creation
+ 2) Fork and clone this repo, navigate to the project directory then
 
-* Database initialization
+ 3) To bundle, run: ```bundle install```
 
-* How to run the test suite
+ 4) To run the app in the development mode: ```rails s```
 
-* Services (job queues, cache servers, search engines, etc.)
+ 5) Open http://localhost:3000 to view it in the browser.
 
-* Deployment instructions
-
-* ...
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
