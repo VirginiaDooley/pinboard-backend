@@ -25,13 +25,13 @@ class Api::V1::BoardsController < ApplicationController
   end
 
   # PATCH/PUT /boards/1
-  def update
-    if @board.update(board_params)
-      render json: @board
-    else
-      render json: @board.errors
-    end
-  end
+  # def update
+  #   if @board.update(board_params)
+  #     render json: @board
+  #   else
+  #     render json: @board.errors
+  #   end
+  # end
 
   # DELETE /boards/1
   # def destroy
@@ -44,8 +44,7 @@ class Api::V1::BoardsController < ApplicationController
       @board = Board.find(params[:id])
     end
 
-    # Only allow a trusted parameter "white list" through.
     def board_params
-      params.require(:board).permit(:title, images_attributes: [:url])
+      params.require(:board).permit(:title, images_attributes: [:url, :description])
     end
 end
