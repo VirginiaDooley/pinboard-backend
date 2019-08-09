@@ -14,7 +14,10 @@ gem 'puma', '~> 3.11'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 gem 'pry'
-gem install bundler -v '2.0.1'
+
+gem 'nokogiri'
+gem 'rack', '~> 2.0.1'
+gem 'rspec'
 
 gem 'active_model_serializers', '~> 0.10.7'
 
