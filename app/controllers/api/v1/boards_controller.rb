@@ -46,6 +46,6 @@ class Api::V1::BoardsController < ApplicationController
 
     # Only allow a trusted parameter "white list" through.
     def board_params
-      params.require(:board).permit(:title, image_attributes: [:images])
+      params.require(:board).permit(:title, images_attributes: [:url])
     end
 end
