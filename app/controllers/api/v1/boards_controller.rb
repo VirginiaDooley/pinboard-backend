@@ -15,7 +15,6 @@ class Api::V1::BoardsController < ApplicationController
 
   # POST /boards
   def create
-    binding.pry
     @board = Board.new(board_params)
 
     if @board.save
