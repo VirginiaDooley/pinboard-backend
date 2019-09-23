@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  devise_for :users
   get 'welcome/home'
 
   get '/app', to: 'welcome#app', as: 'app'
@@ -15,6 +16,7 @@ end
 
 # fetch('http://localhost:3000/api/v1/boards')
 Rails.application.routes.draw do
+  devise_for :users
   get 'welcome/home'
 
 end
