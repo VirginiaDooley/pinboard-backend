@@ -15,6 +15,8 @@ gem 'puma', '~> 3.11'
 # gem 'bcrypt', '~> 3.1.7'
 gem 'pry'
 
+gem 'devise'
+
 gem 'webpacker'
 
 gem 'nokogiri'
