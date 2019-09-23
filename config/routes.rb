@@ -1,6 +1,10 @@
 Rails.application.routes.draw do
   get 'welcome/home'
-  get 'welcome/app'
+
+  get '/app', to: 'welcome#app', as: 'app'
+
+  root 'welcome#home'
+
   namespace :api do
     namespace :v1 do
       resources :images
@@ -10,3 +14,7 @@ Rails.application.routes.draw do
 end
 
 # fetch('http://localhost:3000/api/v1/boards')
+Rails.application.routes.draw do
+  get 'welcome/home'
+
+end
