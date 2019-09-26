@@ -12,6 +12,9 @@
 
 ActiveRecord::Schema.define(version: 2019_09_23_112731) do
 
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
   create_table "boards", force: :cascade do |t|
     t.string "title"
     t.datetime "created_at", null: false
@@ -19,8 +22,8 @@ ActiveRecord::Schema.define(version: 2019_09_23_112731) do
   end
 
   create_table "boards_images", id: false, force: :cascade do |t|
-    t.integer "board_id", null: false
-    t.integer "image_id", null: false
+    t.bigint "board_id", null: false
+    t.bigint "image_id", null: false
     t.index ["board_id", "image_id"], name: "index_boards_images_on_board_id_and_image_id"
     t.index ["image_id", "board_id"], name: "index_boards_images_on_image_id_and_board_id"
   end
