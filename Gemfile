@@ -18,7 +18,7 @@ gem 'pry'
 gem 'devise'
 
 gem 'nokogiri'
-gem 'rack', '~> 2.0.1'
+gem 'rack', '~> 2.0.8'
 gem 'rspec'
 
 gem 'active_model_serializers', '~> 0.10.7'
