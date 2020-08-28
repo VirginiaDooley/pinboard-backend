@@ -14,6 +14,7 @@ To get start and/or collaborate:
 
  3) To bundle, run: ```bundle install```
 
- 4) To run the app in the development mode: ```rails s```
+ 4) To run the app in the development mode: ```rails s```. Run ```rails db:migrate``` as needed. 
 
- 5) Open http://localhost:3001 (or another port different to your front end) to view it in the browser.
+ 5) Open http://localhost:3000/api/v1/boards (or another port different to your front end such as http://localhost:3001/api/v1/boards) to view json data in the browser.
+
